@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01CF70662E2A411F003516AF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 01CF70652E2A411F003516AF /* SnapKit */; };
+		01CF737D2E2BF810003516AF /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 01CF737C2E2BF810003516AF /* RiveRuntime */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01CF70662E2A411F003516AF /* SnapKit in Frameworks */,
+				01CF737D2E2BF810003516AF /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,7 @@
 			name = SunJar;
 			packageProductDependencies = (
 				01CF70652E2A411F003516AF /* SnapKit */,
+				01CF737C2E2BF810003516AF /* RiveRuntime */,
 			);
 			productName = SunJar;
 			productReference = 01CF704A2E2A402E003516AF /* SunJar.app */;
@@ -115,6 +118,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				01CF70642E2A411F003516AF /* XCRemoteSwiftPackageReference "SnapKit" */,
+				01CF737B2E2BF810003516AF /* XCRemoteSwiftPackageReference "rive-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 01CF704B2E2A402E003516AF /* Products */;
@@ -362,6 +366,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		01CF737B2E2BF810003516AF /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.11.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -369,6 +381,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 01CF70642E2A411F003516AF /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		01CF737C2E2BF810003516AF /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01CF737B2E2BF810003516AF /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

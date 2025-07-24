@@ -12,12 +12,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let bottleView = BottleView()
+        let bottleView = BottleView(frame: CGRect(x: 100, y: 100, width: 290, height: 345))
         view.addSubview(bottleView)
-        bottleView.snp.makeConstraints { make in
-            make.center.equalToSuperview()
-            make.size.equalTo(CGSize(width: 290, height: 345))
-        }
+//        bottleView.snp.makeConstraints { make in
+//            make.center.equalToSuperview()
+//            make.size.equalTo(CGSize(width: 290, height: 345))
+//        }
     }
 }
 
